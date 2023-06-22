@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .regession,
+    .multiple,
+    ol,
+    ul {
+      overflow: auto;
+      width: 50%;
+      margin: 0 auto;
+      height: 200px;
+    }
+
+    .regession li,
+    .multiple li,
+    ol li,
+    ul li {
+      padding: 10px 0;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    /* 将其所有是奇数的孩子全部变成红色，偶数的孩子变成绿色 */
+    /* nth-child(odd)/ul li:nth-child(2n+1) 选择ul li为奇数的孩子 */
+    /* ul li:nth-child(odd) {
+      color: red;
+    } */
+    /* nth-child(even)/ul li:nth-child(2n) 选择ul li为偶数的孩子 */
+    /* ul li:nth-child(even) {
+      color: green;
+    } */
+
+    ul li:nth-child(2n+1) {
+      color: purple;
+      font-weight: 700;
+    }
+
+    ul li:nth-child(even) {
+      color: plum;
+      font-weight: 700;
+    }
+
+    ol li:nth-child(3n) {
+      color: darkseagreen;
+    }
+
+    /* nth-child(n) n是从0开始的 */
+
+    .multiple li:nth-child(n+6) {
+      color: crimson;
+      font-weight: 700;
+    }
+
+    .regession li:nth-child(-n+6) {
+      color: chocolate;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+    <li>我是第9个孩子</li>
+    <li>我是第10个孩子</li>
+  </ul>
+  <br><br>
+  <ol type="A">
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+    <li>我是第9个孩子</li>
+    <li>我是第10个孩子</li>
+  </ol>
+  <ol type="A" class="multiple">
+    <li>我是第01个孩子</li>
+    <li>我是第02个孩子</li>
+    <li>我是第03个孩子</li>
+    <li>我是第04个孩子</li>
+    <li>我是第05个孩子</li>
+    <li>我是第06个孩子</li>
+    <li>我是第07个孩子</li>
+    <li>我是第08个孩子</li>
+    <li>我是第09个孩子</li>
+    <li>我是第10个孩子</li>
+  </ol>
+  <ol class="regession">
+    <li>我是第001个孩子</li>
+    <li>我是第002个孩子</li>
+    <li>我是第003个孩子</li>
+    <li>我是第004个孩子</li>
+    <li>我是第005个孩子</li>
+    <li>我是第006个孩子</li>
+    <li>我是第007个孩子</li>
+    <li>我是第008个孩子</li>
+    <li>我是第009个孩子</li>
+    <li>我是第010个孩子</li>
+  </ol>
+
+</body>
+
+</html>

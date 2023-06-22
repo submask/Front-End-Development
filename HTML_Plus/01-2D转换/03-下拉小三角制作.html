@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 不使用字体图标制作下拉小三角 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 200px;
+            height: 30px;
+            border: 2px solid #ccc;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .box::after {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            top: calc(50% - 10px / 2 - 5px);
+            right: 10px;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            transform: rotate(45deg);
+            transition: all 1s;
+        }
+        
+        .box:hover::after {
+            top: calc(50% - 10px / 2);
+            right: 10px;
+            transform: rotate(585deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

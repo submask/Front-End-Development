@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D两面翻转</title>
+  <style>
+    body {
+      perspective: 500px;
+      /* 设置透视的距离 */
+    }
+
+    .box {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      transform-style: preserve-3d;
+      /* 由于背面设计是3d模型因此需要保留 */
+      transition: all 0.5s;
+    }
+
+    .box:hover {
+      transform: rotateY(180deg);
+    }
+
+    .box div {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      /* top: 100px; */
+      color: #fff;
+      text-align: center;
+      /* line-height: 300px; */
+      font: 700 normal 33px/300px "微软雅黑";
+    }
+
+    .box div:first-child {
+      background-color: bisque;
+      z-index: 1;
+      backface-visibility: hidden;
+    }
+
+    .box div:last-child {
+      background-color: purple;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div>这是正面</div>
+    <div>这是背面</div>
+  </div>
+</body>
+
+</html>

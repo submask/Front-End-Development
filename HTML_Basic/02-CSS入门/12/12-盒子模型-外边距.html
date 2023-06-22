@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- display属性必须是block(块级)，不可以是行块元素 -->
+  <style>
+    /* 块级元素设置居中对其直接设置margin:0 auto */
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      margin: 20px auto;
+    }
+
+    body {
+      text-align: center;
+
+    }
+
+    /* 行元素设置居中对齐需要在父元素设置text-align:center */
+    span {
+      font: normal 700 18px/20px '微软雅黑';
+      border: 5px solid #ccc;
+    }
+
+    .inline_block {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <span>这是行元素</span><br>
+  <div class="inline_block">这是行块元素</div>
+</body>
+
+</html>

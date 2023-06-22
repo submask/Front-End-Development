@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      perspective: 500px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      background-color: bisque;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: rotate 2s infinite;
+    }
+
+    .box:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes rotate {
+      0% {}
+
+      100% {
+        /* x轴向内翻转 */
+        /* transform: rotateX(180deg);  */
+        /*y轴向内翻转*/
+        /* transform: rotateY(-180deg); */
+        /* z轴翻转同2D旋转一致 */
+        /* transform: rotateZ(120deg); */
+        /* 自定义旋转中x,y,z中的内容是1为旋转，0为不旋转 */
+        transform: rotate3d(1, 1, 0, 360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

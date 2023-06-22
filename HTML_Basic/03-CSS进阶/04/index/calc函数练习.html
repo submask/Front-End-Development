@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 98%;
+            height: 50px;
+            background-color: plum;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 85px;
+        }
+        
+        .box::after {
+            display: none;
+            content: "";
+            display: inline-block;
+        }
+        
+        .box::after,
+        .box:hover::after {
+            width: calc(100% - 5px);
+            height: 1px;
+            border-bottom: 1px solid salmon;
+        }
+        
+        .box:hover::after {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

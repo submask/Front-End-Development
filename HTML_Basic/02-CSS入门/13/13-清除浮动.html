@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 98%;
+      /* height: 160px; */
+      background-color: bisque;
+      /* overflow: hidden; */
+    }
+
+    .boxs {
+      width: 200px;
+      height: 160px;
+      background-color: aquamarine;
+      float: left;
+
+    }
+
+    .bottom {
+      height: 100px;
+      background-color: #000;
+
+    }
+
+    .box::before,
+    .box::after {
+      content: "";
+      display: table;
+    }
+
+    .box::after {
+      clear: both;
+    }
+
+    .box {
+      *zoom: 1
+        /*考虑到IE8,9浏览器的兼容性*/
+    }
+
+    /* .box::after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    } */
+
+    /* .clear {
+      clear: both;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="boxs">盒子1</div>
+    <div class="boxs">盒子2</div>
+    <!-- <div class="clear"></div> -->
+  </div>
+
+  <div class="bottom">底部</div>
+  <!-- 发现浮动父元素盒子高度坍塌 -->
+  <!--解决方法1、额外标签法：在浮动盒子里面的最后一个元素下面添加一个div用于清除浮动 -->
+  <!-- 解决方法2、在父元素添加overflow:hidden -->
+  <!-- 解决方法3、使用伪元素清除浮动 -->
+  <!-- 解决方法4、使用双伪元素清除浮动 -->
+</body>
+
+</html>

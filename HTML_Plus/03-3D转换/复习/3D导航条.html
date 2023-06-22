@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D导航条</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            perspective: 500px;
+        }
+
+        .box {
+            width: 100%;
+            margin: 0 auto;
+            height: 45px;
+        }
+
+        ul {
+            width: 100%;
+            list-style: none;
+        }
+
+        ul::after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        li {
+            margin: 0 30px;
+            padding: 0 30px;
+            float: left;
+        }
+
+        .boxs {
+            position: relative;
+            width: 100px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg);
+            transition: all 0.5s;
+        }
+
+        .boxs:hover {
+            transform: rotateX(90deg);
+        }
+
+        .boxs div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0;
+            color: #000;
+            font: 700 normal 16px "微软雅黑";
+        }
+
+        .front {
+            background-color: aquamarine;
+            z-index: 1;
+            backface-visibility: hidden;
+        }
+
+        .after {
+            top: -20px;
+            background-color: aqua;
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+            <li>
+                <div class="boxs">
+                    <div class="front">3D导航条</div>
+                    <div class="after">3D导航条</div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .box {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .left,
+    .right {
+      width: 50%;
+      text-align: center;
+      float: left;
+    }
+
+    .right::after,
+    .left::after,
+    .box::after {
+      content: "";
+      height: 0;
+      display: block;
+      visibility: hidden;
+      clear: both;
+    }
+
+    .one,
+    .two,
+    .three {
+      width: 33.3%;
+      padding: 10px 0;
+      float: left;
+      font-size: 5px;
+      text-align: center;
+    }
+
+    input {
+      outline: none;
+      margin: 10px 0;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="text"] {
+      background-color: coral;
+      color: white;
+    }
+
+    input[value^="请修改"] {
+      text-decoration: line-through;
+    }
+
+    input[value$="内容"] {
+      text-decoration: underline;
+    }
+
+    input {
+      width: 100px;
+    }
+
+    input[name*="che"] {
+      text-decoration: dotted;
+      font-style: italic;
+      background-color: brown;
+    }
+
+    .five input[type="text"] {
+      color: yellowgreen;
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">
+      <div class="one">
+        <h1>修改输入框的格式</h1>
+        <input type="text" name="" id="" autofocus>
+      </div>
+      <div class="two">
+        <h1>修改输入框的格式</h1>
+        <ul>
+          <li><input type="search" name="" id="" value="请修改我"></li>
+          <li><input type="search" name="" id="" value="请不要修改我"></li>
+          <li><input type="search" name="" id="" value="请修改我"></li>
+          <li><input type="search" name="" id="" value="请修改我"></li>
+        </ul>
+      </div>
+      <div class="three">
+        <h1>修改输入框的格式</h1>
+        <ul>
+          <li><input type="search" name="" id="" value="内容"></li>
+          <li><input type="search" name="" id="" value="不是内容"></li>
+          <li><input type="search" name="" id="" value="内容才是"></li>
+          <li><input type="search" name="" id="" value="修改内容"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="four">
+        <input type="text" name="check_one" id="" placeholder="我被选中了">
+        <input type="text" name="check_two" id="" placeholder="我被选中了">
+        <input type="text" name="chess_one" id="" placeholder="我是一条咸鱼">
+      </div>
+      <div class="five"><input type="text" name="" id=""></div>
+    </div>
+  </div>
+</body>
+
+</html>

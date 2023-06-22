@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../小米图标变化/icon/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        p {
+            font-size: 30px;
+        }
+        
+        .xiaomi,
+        .home {
+            width: 58px;
+            height: 58px;
+        }
+        
+        .xiaomi,
+        .home {
+            line-height: 58px;
+            text-align: center;
+            background-color: #FA6709;
+            float: left;
+        }
+        
+        .icon-xiaomi:before,
+        .icon-home:before {
+            color: #fff;
+        }
+        
+        .icon::after,
+        .icon::before,
+        header::after,
+        header::before {
+            display: table;
+            content: "";
+        }
+        
+        header::after,
+        .icon::after {
+            clear: both;
+        }
+        
+        .icon {
+            width: calc(58px * 2);
+            margin-left: 0px;
+            transition: all 0.5s ease 0s;
+            /* 过渡动画谁需要就加谁身上 */
+        }
+        
+        .icon:hover {
+            margin-left: -58px;
+        }
+        
+        .icon_box {
+            overflow: hidden;
+            width: 58px;
+            height: 58px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="icon_box">
+            <div class="icon">
+                <p class="icon-xiaomi xiaomi"></p>
+                <p class="icon-home home"></p>
+            </div>
+        </div>
+
+    </header>
+</body>
+
+</html>

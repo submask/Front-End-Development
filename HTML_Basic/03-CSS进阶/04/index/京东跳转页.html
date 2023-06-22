@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    button,
+    input[type="text"],
+    a {
+      text-decoration: none;
+      width: 37px;
+      line-height: 35px;
+      text-align: center;
+      background-color: rgb(247, 247, 247);
+      display: inline-block;
+      color: #000;
+      font-size: 14px;
+      border: 1px solid #ddd;
+    }
+
+    input[type="text"] {
+      background-color: #fff;
+      outline: none;
+    }
+
+    .nav {
+      text-align: center;
+    }
+
+    .top,
+    .bottom,
+    .total {
+      width: 87px;
+
+    }
+
+    .total,
+    .from,
+    .end {
+      background-color: #fff;
+      border: none;
+      margin-left: 15px;
+    }
+
+    .from,
+    .end {
+      margin: 0 2px;
+    }
+
+    .nav .total:hover,
+    .nav .from:hover,
+    .nav .end:hover {
+      background-color: #fff;
+      border: none;
+      color: #000;
+    }
+
+    .nav a:hover {
+      background-color: #fff;
+      border: 1px solid transparent;
+      color: rgb(236, 94, 60);
+    }
+
+    .more {
+      border: none;
+      background-color: #fff;
+      color: #ddd;
+    }
+
+    .page {
+      margin-right: 15px;
+    }
+
+    button {
+      width: 55px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="#" class="top">&lt;上一页</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#" class="more">...</a>
+    <a href="#" class="bottom">下一页&gt;</a>
+    <a href="#" class="total">共100页</a>
+    <a href="#" class="from">到第</a>
+    <input type="text" name="" id="" value="1">
+    <a href="#" class="end">页</a>
+    <button>确定</button>
+  </div>
+</body>
+
+</html>

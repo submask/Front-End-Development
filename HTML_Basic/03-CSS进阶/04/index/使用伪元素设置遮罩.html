@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Helper/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .box {
+            width: 446px;
+            height: 321px;
+            background-image: url(./img/img.png);
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .box::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            display: none;
+            width: 100%;
+            height: 321px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .box:hover::after {
+            display: inline-block;
+        }
+        
+        .icon {
+            display: none;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            font-size: 40px;
+            color: orange;
+        }
+        
+        .box:hover .icon {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <i class="fa fa-play-circle icon"></i>
+    </div>
+</body>
+
+</html>

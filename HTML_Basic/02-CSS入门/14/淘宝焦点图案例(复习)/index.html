@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../Helper/font-awesome-4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 566px;
+      height: 316px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    img {
+      width: 566px;
+      height: 316px;
+      border-radius: 10px;
+    }
+
+    .left,
+    .right {
+      position: absolute;
+      width: 20px;
+      line-height: 30px;
+      background-color: antiquewhite;
+      text-align: center;
+      top: 50%;
+      font-size: 14px;
+      color: #fff;
+      background-color: rgb(144, 148, 156);
+    }
+
+    .left {
+      border-radius: 0 15px 15px 0;
+      left: 0;
+    }
+
+    .right {
+      border-radius: 15px 0 0 15px;
+      right: 0;
+    }
+
+    ul {
+      width: 123px;
+      height: 25px;
+      list-style: none;
+      position: absolute;
+      bottom: 10px;
+      /* 设置绝对定位水平居中：页面的一半-自身盒子宽度的一半 */
+      left: calc(50% - 123px / 2);
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    ul li {
+      float: left;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 8px;
+
+    }
+
+    ul .active {
+      background-color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img src="./img/img.jpg" alt="" srcset="">
+    <div class="left">
+      <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="right">
+      <i class="fa fa-angle-right"></i>
+    </div>
+    <ul>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+
+</html>

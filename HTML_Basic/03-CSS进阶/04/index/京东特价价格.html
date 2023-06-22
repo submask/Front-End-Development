@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 162px;
+      height: 28px;
+      border: 1px solid red;
+    }
+
+    .newprice {
+      width: 40%;
+      line-height: 28px;
+      text-align: center;
+      background-color: red;
+      color: #fff;
+      float: left;
+    }
+
+    .sanjiao {
+      width: 0;
+      height: 0;
+      border: 28px solid transparent;
+      border-top: 0px solid gold;
+      border-left: 14px solid red;
+      border-right: 0px solid rebeccapurple;
+      float: left;
+    }
+
+    .oldprice {
+      text-decoration: line-through;
+      color: gainsboro;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    .box::after {
+      content: "";
+      display: block;
+      height: 0;
+      visibility: hidden;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="newprice">
+      ￥1650
+    </div>
+    <div class="sanjiao"></div>
+    <div class="oldprice">
+      ￥5660
+    </div>
+  </div>
+</body>
+
+</html>

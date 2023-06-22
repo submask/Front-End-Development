@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    /* 指定宽高，设置内边距，那么盒子的大小就会被撑开 */
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      padding: 20px;
+    }
+
+    /* 不指定宽度，默认浏览器的大小，设置内边距,发现除了高度会变成220px width不会变  */
+    .box3 {
+      height: 200px;
+      background-color: antiquewhite;
+      padding: 20px;
+    }
+
+    /* div下p标签设置内边距，p不设宽高但只在div设置宽高，那么他的宽度就是父标签的宽度，而高是内边距的值 */
+    div {
+      width: 278px;
+      height: 200px;
+    }
+
+    p {
+
+      background-color: aqua;
+      padding: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="box1"></div> -->
+  <div>
+    <p>1</p>
+  </div>
+  <!-- <div class="box3"></div> -->
+</body>
+
+</html>

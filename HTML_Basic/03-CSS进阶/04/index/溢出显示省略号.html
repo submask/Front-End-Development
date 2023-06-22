@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .single {
+      /* white-space: nowrap; */
+      white-space: nowrap;
+      /*设置不换行*/
+      overflow: hidden;
+      /*设置溢出隐藏*/
+      text-overflow: ellipsis;
+      /*设置文本溢出样式*/
+      border: 1px solid salmon;
+    }
+
+    textarea {
+      resize: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /*  display: -webkit-box;/*设置webkit为弹性盒子*/
+      /*  -webkit-line-clamp: 10;/*设置webkit最多显示几行*/
+      /* -webkit-box-orient: vertical;设置盒子内容居中对齐*/
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="single">
+    这是一个无聊的故事哈哈哈!
+  </div>
+  <textarea name="" id="" cols="30" rows="10">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro error laborum quas consectetur at reprehenderit quidem velit, aperiam soluta eaque unde veniam ea! At, soluta voluptatibus iusto eos natus in.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error commodi numquam suscipit nesciunt eum hic unde quod iusto voluptates libero ad repellat, at temporibus. Eum asperiores quae fugit praesentium.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint magnam corrupti laboriosam. Aliquid quis fuga, adipisci laborum dolores reprehenderit animi perferendis eum vitae provident natus? Quisquam quo eius aut delectus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque id ducimus doloribus accusamus ex ut consectetur atque at, tempore maxime delectus incidunt molestias debitis, rem earum vero. Nobis, a neque.
+  </textarea>
+</body>
+
+</html>

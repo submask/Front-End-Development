@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <label for="user">用户名</label><input type="text" name="user" id="user" maxlength="4"><br />
+    <label for="pwd">密码</label><input type="password" name="pwd" id="pwd" minlength="1"><br />
+    <label for="">性别</label>
+    <label for="man"><input type="radio" name="sex" id="man" value="man" > 男</label>
+      <label for="woman"><input type="radio" name="sex" id="woman" value="woman" >女</label>
+    <br/>
+    <label for="">爱好</label>
+      <label for="basketball"><input type="checkbox" name="fav" id="basketball" value="basketball">篮球</label>
+      <label for="football"><input type="checkbox" name="fav" id="football" value="football">足球</label>
+      <label for="table_tennis"><input type="checkbox" name="fav" id="table_tennis" value="table_tennis">桌球</label>
+    <br/>
+    <label for="">班级</label>
+    <select name="className" id="">
+      <option value="defalut" selected="selected">请选择班级</option>
+      <option value="bigdata1">大数据1班</option>
+      <option value="bigdata2">大数据2班</option>
+      <option value="bigdata3">大数据3班</option>
+    </select><br/>
+    <label for="">留言信息</label>
+    <textarea name="infos" cols="10" rows="10">请输入内容</textarea>
+    <button type="submit">提交</button>
+    <input type="reset" value="重置">
+  </form>
+</body>
+</html>

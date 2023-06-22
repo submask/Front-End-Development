@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+    }
+
+
+
+    ul::after {
+      content: "";
+      height: 0;
+      display: block;
+      clear: both;
+      visibility: hidden;
+    }
+
+
+
+    /* 由于浮动的时候后一个盒子会紧紧贴着前一个盒子，由此产生两个浮动盒子的焦点地方就会产生粗线，那么这时只需要设置外边距为-1px即可解决 */
+    ul li {
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+      float: left;
+      margin-left: -1px;
+      position: relative;
+    }
+
+    ul li:hover {
+      border: 1px solid blue;
+      z-index: 1;
+    }
+
+    div {
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

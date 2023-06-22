@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {}
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- 1、生成标签名按下tab键 -->
+    <!-- 2、生成多个标签 标签*数量 -->
+    <p></p>
+    <!-- div*3 -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- 3、生成父子关系 用> -->
+    <!-- div>span>p*3 -->
+    <div>
+      <span>
+        <p></p>
+        <p></p>
+        <p></p>
+      </span>
+    </div>
+    <!-- 4、生成兄弟标签,用+ -->
+    <!-- div+p>ul>li*3{你好} -->
+    <div></div>
+    <p>
+    <ul>
+      <li>你好</li>
+      <li>你好</li>
+      <li>你好</li>
+    </ul>
+    </p>
+    <!-- 5、生成类名或id名直接写.或# -->
+    <!-- div.ul>div#li*3>span*3 -->
+    <div class="ul">
+      <div id="li"><span></span><span></span><span></span></div>
+      <div id="li"><span></span><span></span><span></span></div>
+      <div id="li"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <!-- div.one$*7 -->
+  <div class="one1"></div>
+  <div class="one2"></div>
+  <div class="one3"></div>
+  <div class="one4"></div>
+  <div class="one5"></div>
+  <div class="one6"></div>
+  <div class="one7"></div>
+</body>
+
+</html>

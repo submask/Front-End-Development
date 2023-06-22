@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 注意点：
+要观察每一个盒子他们自身的特点 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      width: 1280px;
+      height: 616px;
+      margin: 0 auto;
+    }
+
+
+
+    .nav .left {
+      width: 237px;
+      height: 616px;
+      background-color: aqua;
+      float: left;
+    }
+
+    .nav .right {
+      width: 985px;
+      height: 616px;
+      list-style: none;
+      background-color: azure;
+      float: left;
+    }
+
+    .nav .right li {
+      width: 235px;
+      height: 295px;
+      background-color: antiquewhite;
+      float: left;
+      margin-left: 10px;
+
+      text-align: center;
+    }
+
+    .setop {
+      margin-top: 23px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="left"></div>
+    <ul class="right">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li class="setop">5</li>
+      <li class="setop">6</li>
+      <li class="setop">7</li>
+      <li class="setop">8</li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border-radius: 20%;
+            left: 0;
+            top: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: move 2s infinite alternate backwards, rorate 2s infinite backwards;
+        }
+
+        @keyframes rorate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes move {
+            0% {}
+
+            20% {
+                top: calc(50% - 200px / 20);
+                transform: scale(0.5);
+            }
+
+            /* 50% {
+                top: calc(50% - 200px / 2);
+                left: calc(50% - 200px / 2);
+            } */
+            100% {
+                left: 20px;
+                top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 不管是否是子标签还是孙子标签，只要选择后代选择器那么他就会选择在父标签下所有的标签内容 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ol li {
+      background-color: antiquewhite;
+    }
+
+    li {
+      margin: 20px 0;
+    }
+
+    ul li {
+      background-color: aqua;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: black;
+      cursor: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ol type="i">
+      <div>我是ol标签</div>
+      <!-- <li>我是选中的ol子标签</li> -->
+      <div>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+      </div>
+    </ol>
+    <ul>
+      <div>我是ul标签</div>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>5</li>
+      <li>4</li>
+      <li>12</li>
+      <li>11</li>
+      <li><a href="#">我是链接1</a></li>
+      <a href="#">我是链接2</a>
+    </ul>
+  </div>
+</body>
+
+</html>

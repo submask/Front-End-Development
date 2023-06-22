@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      /* margin: 0 auto; */
+      background-color: antiquewhite;
+      /* 由于设置了绝对定位，margin:0 auto 居中对齐不能使用了，那么就必须通过一种计算方式 */
+      position: absolute;
+      /* 设置绝对定位的水平居中 */
+      left: calc(50% - (200px / 2));
+      /* 设置绝对定位的水平居中 */
+      top: calc(50% - (200px / 2))
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

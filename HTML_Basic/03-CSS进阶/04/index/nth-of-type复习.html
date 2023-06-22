@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .parent {
+            width: 40%;
+            height: 120px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        /* 一个先找顺序在查看他的类型是否匹配 */
+        
+        .parent div:nth-child(2) {
+            color: red;
+            font-weight: 700px;
+        }
+        /* 另一个先找类型再找顺序 */
+        
+        .parent div:nth-of-type(1) {
+            background-color: blueviolet;
+            font-weight: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <p>外甥</p>
+        <span>二儿子</span>
+        <div>大儿子</div>
+    </div>
+</body>
+
+</html>

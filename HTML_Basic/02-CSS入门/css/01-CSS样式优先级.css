@@ -1,0 +1,7 @@
+div {
+  background-color: palevioletred !important;
+  width: 50%;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid gold;
+}

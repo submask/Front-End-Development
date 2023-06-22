@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: beige;
+        }
+        
+        .box>div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            transform: translate(50%, 50%);
+            /* 使用平移，里面的百分比是以div盒子的宽高而设定的 */
+            border: 1px solid salmon;
+            overflow: hidden;
+        }
+        
+        .box>div::after {
+            content: "";
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            transform: rotate(180deg);
+            transform-origin: left bottom;
+            transition: all 2s;
+        }
+        
+        .box>div:hover::after {
+            transform: rotate(0deg);
+            content: "你好";
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+    </div>
+</body>
+
+</html>

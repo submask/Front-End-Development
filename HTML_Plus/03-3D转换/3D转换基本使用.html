@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      perspective: 500px;
+    }
+
+    .box div[class^="content"] {
+      width: 200px;
+      height: 200px;
+      /* background-color: pink; */
+      position: absolute;
+      top: 20px;
+      left: calc(50% - 200px / 2);
+      /* transform: translate3d(0, -10px, 10px); */
+    }
+
+    .content1 {
+      transform: translate3d(0, 0, 130px);
+      background-color: rgba(255, 192, 203, 0.2);
+    }
+
+    .content2 {
+      transform: translate3d(0, 0, 140px);
+      background-color: rgba(255, 192, 203, 0.5);
+    }
+
+    .content3 {
+      transform: translate3d(0, 0, 150px);
+      background-color: rgba(255, 192, 203, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="content1"></div>
+    <div class="content2"></div>
+    <div class="content3"></div>
+  </div>
+</body>
+
+</html>

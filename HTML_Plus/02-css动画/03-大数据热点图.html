@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大数据热点图</title>
+    <style>
+        body {
+            background-color: #303330;
+        }
+        
+        .map {
+            position: relative;
+            width: 747px;
+            height: 617px;
+            background-image: url(./03-热点图案例/img/map.png);
+            margin: 0 auto;
+        }
+        
+        .bj {
+            position: absolute;
+            right: 182px;
+            top: 222px;
+        }
+        
+        .gz {
+            position: absolute;
+            right: 200px;
+            top: 528px;
+        }
+        
+        .tb {
+            position: absolute;
+            right: 75px;
+            top: 485px;
+        }
+        
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: skyblue;
+            border-radius: 50%;
+        }
+        
+        .bj div[class^="pluse"],
+        .gz div[class^="pluse"],
+        .tb div[class^="pluse"] {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 10px 0 skyblue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: point;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+        }
+        
+        .pluse2 {
+            animation-delay: 0.2s;
+        }
+        
+        .pluse3 {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes point {
+            0% {}
+            50% {
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+            100% {
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="bj">
+            <div class="dotted"></div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+        <div class="gz">
+            <div class="dotted"></div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+        <div class="tb">
+            <div class="dotted"></div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div {
+      background-color: #000;
+    }
+
+    .div {
+      background-color: gray;
+    }
+
+    .ul {
+      color: red;
+      font: 16px/2 "微软雅黑";
+    }
+
+    body {
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- 1、层叠性 -->
+    <div class="div">这是一个div标签</div>
+    <!-- 2、继承性 -->
+    <!-- 行高跟单位是几像素，当行高不跟单位的时候，他的值意思是我当前的行高是字体大小的几倍 -->
+    <div class="ul">
+      <li>这是标签1</li>
+      <li>这是标签2</li>
+    </div>
+    <!-- 3、优先级 -->
+    <!--  通配符/继承<标签选择器<类选择器<id选择器<行内<important  -->
+  </div>
+  <a href="">这是一个链接</a>
+</body>
+
+</html>

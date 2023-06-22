@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 导航条设计 */
+
+.header,
+.bottom {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.header {
+    height: 31px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header .content,
+.header .content>.left {
+    height: 31px;
+}
+
+.header .content>.left {
+    float: left;
+}
+
+.header .left_content {
+    font: 12px "SimSun";
+}
+
+.header .left_content,
+.header .left>a {
+    float: left;
+    font: 12px "SimSun";
+    transform: translateY(50%);
+    /* 设置垂直居中 */
+}
+
+.header .left>a {
+    margin-left: 15px;
+    color: #c81623;
+    font-weight: 700;
+}
+
+.header .content>.right {
+    float: right;
+}
+
+.header .content>.right ul li {
+    float: left;
+}
+
+.header .content>.right {
+    line-height: 31px;
+}
+
+.header .content>.right span {
+    padding: 0 5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header .content>.right li:last-child>span {
+    padding-right: 0;
+    border: none;
+}
+
+
+/* nav部分设计 */
+
+.login .left {
+    float: left;
+}
+
+.login .left,
+.login .right {
+    margin: 20px 0;
+}
+
+.login .right {
+    float: right;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    width: 175px;
+    height: 55px;
+    background-repeat: no-repeat;
+}
+
+.search {
+    width: 538px;
+}
+
+.search,
+.myshopping {
+    float: left;
+}
+
+.search .input {
+    width: 538px;
+    border: 5px solid #c81623;
+}
+
+.search>.input input[type="text"] {
+    width: calc( 536px - 80px - 10px);
+    height: 32px;
+    outline: none;
+    border: none;
+    float: left;
+    padding: 10px;
+}
+
+.search>.input .word {
+    width: calc( 538px - 446px - 10px);
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #c81623;
+    color: #fff;
+    float: left;
+    font-size: 18px;
+}
+
+.search>ul li {
+    float: left;
+    margin: 0 10px;
+    font: 12px 'SimSun';
+}
+
+.search ul {
+    margin: 5px 15px;
+}
+
+.myshopping {
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 80px;
+    background-color: #f7f7f7;
+    position: relative;
+    text-align: center;
+}
+
+.myshopping .tip {
+    position: absolute;
+    right: 30px;
+    top: -10px;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    line-height: 16px;
+    color: #fff;
+}
+
+
+/* 制作底部部分 */
+
+.bottom {
+    width: 100%;
+    position: relative;
+    height: 417px;
+}
+
+.bottom>div {
+    position: absolute;
+    top: 0;
+    /* 绝对定位 脱离 技巧：居中（屏幕一半 - 自身盒子一半） */
+    left: calc( 50% - (1200px / 2));
+}
+
+.bottom .first {
+    padding: 30px 36px;
+}
+
+
+/* 图片浮动做文字环绕 */
+
+.bottom .first>div div:first-child {
+    float: left;
+    margin-right: 10px;
+}
+
+.bottom .first>div div:nth-child(2) {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 700px;
+    color: #000;
+}
+
+.bottom .first>div {
+    float: left;
+    margin-right: 45px;
+    width: 180px;
+}
+
+.bottom .second {
+    border-top: 1px solid #000;
+    padding: calc( 25px /2) calc( 36px * 2);
+    border-bottom: 1px solid #000;
+    top: 109px;
+}
+
+.bottom .second ul div {
+    color: #333;
+    font-size: 18px;
+    margin: 12px 0;
+    margin-bottom: 6px;
+}
+
+.bottom .second ul li {
+    margin: 6px 0;
+}
+
+.bottom .second ul {
+    margin: 0 20px;
+    float: left;
+    margin-right: 50px;
+}
+
+.bottom .second ul:last-child {
+    text-align: center;
+}
+
+.bottom .third {
+    top: calc(109px + 216px);
+    margin: 5px 0;
+    padding: 0 80px;
+}
+
+.bottom .third div:first-child {
+    margin: 5px calc(110px / 2);
+}
+
+.bottom .third ul li {
+    float: left;
+}
+
+.bottom .third ul li a {
+    padding: 0 10px;
+    border-right: 1px solid #666;
+}
+
+.bottom .third div:nth-child(2),
+.bottom .third div:nth-child(3) {
+    margin: 5px 0;
+    text-align: center;
+    /* background-color: #c81623; */
+}

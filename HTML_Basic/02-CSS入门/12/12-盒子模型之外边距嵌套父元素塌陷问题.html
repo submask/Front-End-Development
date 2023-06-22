@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 对于嵌套的父子元素设置外边距时，
+    子元素的外边距的设置实际上就是设置父元素的外边距，也就是父元素塌陷问题 -->
+  <!-- 解决方法：
+  1、设置透明边框
+  2、设置上内边距
+  3、设置溢出隐藏
+  -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+    }
+
+    .father {
+      background-color: blueviolet;
+      width: 400px;
+      height: 400px;
+      margin-top: 20px;
+      /* border: 1px solid transparent; */
+      /* padding-top: 1px; */
+      overflow: hidden;
+
+    }
+
+    .son {
+      background-color: gray;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>

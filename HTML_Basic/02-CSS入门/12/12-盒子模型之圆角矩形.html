@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      margin: 10px auto;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      /*  */
+    }
+
+    .one {
+      height: 400px;
+      border-radius: 200px;
+    }
+
+    .two {
+      border-radius: 50%;
+    }
+
+    .three {
+      border-radius: 80px 20px;
+    }
+
+    .foure {
+      /* border-radius: 80px 60px 40px 20px; */
+      border-top-left-radius: 80px;
+      border-top-right-radius: 60px;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 设置圆角矩形为30px -->
+  <div class="one"></div>
+  <!-- 设置圆形 -->
+  <div class="two"></div>
+  <!--  设置圆角矩形两个属性 -->
+  <div class="three"></div>
+  <!-- 设置圆角矩形四个属性 -->
+  <div class="foure"></div>
+  <!--  设置圆形  -->
+  <div class="circle"></div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body::after,
+body::before {
+    display: table;
+    content: "";
+}
+
+body::after {
+    clear: both;
+}
+
+.div_box div {
+    float: left;
+}
+
+.box {
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.box,
+.div_box {
+    float: left;
+}
+
+.div_box {
+    width: 128px;
+    margin-left: 0px;
+    transition: all 0.2s;
+}
+
+.div_box:hover {
+    margin-left: -54px;
+}
+
+.icon1,
+.icon2 {
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 54px;
+    background-color: #FA6709;
+}
+
+.icon-home:before,
+.icon-xiaomi:before {
+    color: #fff;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小球滚动</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            border-radius: 50%;
+            /* animation-name: circle;
+            animation-duration: 10s; */
+            /* 设置动画循环次数 */
+            /* animation-iteration-count: infinite; */
+            /* 设置动画是否反方向进行移动 */
+            /* animation-direction: alternate; */
+            /* 设置动画完成后停留在原地 */
+            /* animation-fill-mode: forwards; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: circle 10s ease 1s infinite alternate forwards;
+        }
+        
+        div:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes circle {
+            0% {
+                transform: translateX(0px) rotate(0deg);
+            }
+            25% {
+                transform: translateX(1200px) rotate(90deg);
+            }
+            50% {
+                transform: translate(1200px, 600px) rotate(180deg);
+            }
+            75% {
+                transform: translate(0px, 600px) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

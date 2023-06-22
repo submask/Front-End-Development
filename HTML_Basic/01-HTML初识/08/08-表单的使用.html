@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    1、使用link标签导入外部样式
+    <link rel="stylesheet" href="./css/css.css"> 
+    2、使用import导入外部样式
+    @import url(./css/css.css);
+  -->
+  <style type="text/css">
+    @import url(./css/css.css);
+  </style>
+</head>
+<body>
+  <div>
+    <form action="https://passport.jd.com/new/login.aspx" method="post">
+      <div><label for=""><span>用户名:</span><input type="text" placeholder="请输入用户信息" 
+        name="user"></label></div>
+      <div><label for=""><span>密码:&emsp;</span><input type="password" name="pwd" id="" 
+        placeholder="请输入密码"></label></div>
+      <div>
+        <label for=""><span>班级：</span>
+        <select name="className" width="50%">
+          <option value="defalutClass">请选择班级</option>
+          <option value="bigdata1">大数据1班</option>
+          <option value="bigdata2">大数据2班</option>
+          <option value="bigdata3">大数据3班</option>
+        </select>
+        </label>
+        
+      </div>
+      <label for="">
+        <button value="提交" type="submit">提交</button>
+        <button value="重置" type="reset">重置</button>
+      </label>
+    </form>
+  </div>
+</body>
+</html>

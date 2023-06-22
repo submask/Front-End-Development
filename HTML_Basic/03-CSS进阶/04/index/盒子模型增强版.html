@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* .border_box,
+    .padding_box,
+    .content {
+      padding: 25px;
+    } */
+        /* 犯错点：padding只算了一边忘记要算两边 比如只算了左边忘记算左右两边*/
+        
+        .border_box,
+        .content,
+        .margin_box,
+        .padding_box {
+            box-shadow: -10px 10px 50px -10px rgba(0, 0, 0, .5);
+            transition: box-shadow 1s;
+        }
+        
+        .border_box:hover,
+        .content:hover,
+        .margin_box:hover,
+        .padding_box:hover {
+            /* 水平 垂直  阴影虚实 阴影距离 颜色*/
+            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, .2);
+        }
+        
+        .border_box {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(0, 162, 255);
+            padding: 50px;
+        }
+        
+        .padding_box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 158, 197);
+            padding: 50px;
+        }
+        
+        .content {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 158, 160);
+            padding: 50px;
+        }
+        
+        .margin_box {
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 164, 255, .2);
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="margin_box">
+        <div class="border_box">
+            <div class="padding_box">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

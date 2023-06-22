@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    body {
+      perspective: 500px;
+    }
+
+    .box {
+      width: 98%;
+      margin: 0 auto;
+    }
+
+    .box ul::after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .box ul li {
+      width: calc(100% / 6);
+      list-style: none;
+      float: left;
+    }
+
+    .overturn {
+      position: relative;
+      width: calc(100% / 2);
+      height: 50px;
+      margin: 0 auto;
+      text-align: center;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      transition: all 0.5s;
+    }
+
+    .overturn:hover {
+      transform: rotateX(90deg);
+      background-color: cadetblue;
+    }
+
+    .front,
+    .after {
+      position: relative;
+      height: 50px;
+      font: 700 normal 16px/50px "微软雅黑";
+      color: #fff;
+    }
+
+    .front {
+      background-color: brown;
+    }
+
+    .after {
+      top: -25px;
+      background-color: purple;
+      transform: rotateX(-90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+      <li>
+        <div class="overturn">
+          <div class="front">3D导航条</div>
+          <div class="after">这是我哦</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

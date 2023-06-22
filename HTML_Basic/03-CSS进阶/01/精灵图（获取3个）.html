@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box::after {
+      content: "";
+      display: block;
+      height: 0;
+      visibility: hidden;
+      clear: both;
+    }
+
+    .box div {
+      float: left;
+      margin-right: 10px;
+      background-image: url(./img/img.png);
+    }
+
+    .cal,
+    .flag {
+      width: 23px;
+      height: 25px;
+    }
+
+    .cal {
+      background-position: -157px -108px;
+    }
+
+    .flag {
+      background-position: -3px -185px;
+    }
+
+    .down {
+      width: 238px;
+      height: 128px;
+      background-position: 1px -220px;
+    }
+
+    .img {
+      width: 16px;
+      height: 16px;
+      background-position: -140px -9px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="cal"></div>
+    <div class="flag"></div>
+    <div class="down"></div>
+    <div class="img"></div>
+  </div>
+</body>
+
+</html>

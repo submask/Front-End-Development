@@ -1,0 +1,178 @@
+    .login .left span {
+        width: 57px;
+        height: 26px;
+        background-image: url(../img/sk.png);
+        float: left;
+    }
+    
+    .login .left a {
+        position: relative;
+    }
+    
+    .login .left a .sk {
+        position: absolute;
+        top: 10%;
+        right: -90px;
+        padding: 0 10px;
+        border-left: 1px solid #ccc;
+    }
+    
+    .nav {
+        border-bottom: 2px solid #c81623;
+    }
+    
+    .nav ul li {
+        float: left;
+    }
+    
+    .nav ul li {
+        line-height: 45px;
+    }
+    
+    .nav ul li>a span {
+        font-size: 14px;
+        padding: 0 20px;
+        font-weight: 400;
+    }
+    
+    .nav ul li>a {
+        cursor: pointer;
+        transition: color 1s;
+    }
+    
+    .nav ul li>a:active {
+        color: #c8162249;
+    }
+    
+    .nav ul li>a:hover {
+        color: #c81623;
+    }
+    
+    .nav ul li:nth-child(1),
+    .nav ul li:nth-child(2),
+    .nav ul li:nth-child(3) {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0 30px;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 121px;
+        background-image: url(../upload/shop_list_title.png);
+    }
+    
+    .shop_list_content ul {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .shop_list_content ul li {
+        float: left;
+        margin-right: calc( 100% / 64);
+        width: 283px;
+        border: 1px solid transparent;
+        transition: all 1s;
+    }
+    
+    .shop_list_content ul li:hover {
+        border: 1px solid #c81623;
+        box-shadow: -5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .shop_list_content ul li:last-child {
+        margin-right: 0px;
+    }
+    /* 设置商品图片 */
+    
+    .shop_list_content ul li>div:first-child {
+        width: 100%;
+        height: 290px;
+        background-image: url(../upload/shop.png);
+    }
+    
+    .shop_list_content ul li>div:last-child {
+        padding: 10px;
+    }
+    
+    .shop_list_content ul li .name {
+        padding: 0 10px;
+        font: 14px 'SimSun' #666;
+        line-height: 30px;
+        float: left;
+    }
+    
+    .shop_list_content ul li .price {
+        padding: 0 10px;
+    }
+    
+    .shop_list_content ul li .price .left {
+        margin-right: 20px;
+        font: 700 22px "微软雅黑";
+        color: #c81623;
+    }
+    
+    .shop_list_content ul li .price .right {
+        font: 700 14px '微软雅黑';
+        color: #a4a4a4;
+        text-decoration: line-through;
+    }
+    
+    .shop_list_content ul li .shop_bottom {
+        padding: 10px;
+    }
+    
+    .shop_list_content ul li .shop_bottom span:nth-child(2) {
+        display: inline-block;
+        width: 133px;
+        height: 13px;
+        border-radius: 13px;
+        border: 1px solid #c81623;
+        margin: 0 10px;
+        position: relative;
+    }
+    
+    .shop_list_content ul li .shop_bottom .bar {
+        position: absolute;
+        height: 100%;
+        border-radius: 13px;
+        /* box-sizing: content-box; */
+        background-color: #c81623;
+        display: inline-block;
+        /* transition: width 1s; */
+        animation-name: bar;
+        animation-duration: 2s;
+        /* animation-iteration-count: infinite;*/
+        /* animation-direction: alternate; */
+        /* 将动画停留在完成的地方 */
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes bar {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 87%;
+        }
+    }
+    
+    .shop_list_content ul li:hover .shop_bottom .bar {
+        width: 87%;
+    }
+    
+    .shop_list_content ul li button {
+        width: 100%;
+        height: 51px;
+        text-align: center;
+        line-height: 51px;
+        font: 20px 'SimSun';
+        color: #fff;
+        background-color: #c81623;
+        font-weight: 400;
+        font-weight: 700;
+    }
+    
+    .shop_list_content ul li button {
+        border: none;
+    }

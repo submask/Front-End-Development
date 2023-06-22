@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      perspective: 1000px;
+    }
+
+    .box {
+      margin: 0 auto;
+      width: 98%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transition: all 5s;
+      transform-origin: center;
+    }
+
+    .box:hover {
+      transform: rotateY(360deg);
+    }
+
+    .box div,
+    .box div:last-child {
+      position: absolute;
+      top: 100px;
+      left: calc(50% - 300px / 2);
+      width: 300px;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .box div {
+      background-image: url(../旋转木马/img/dog.jpg);
+    }
+
+    .box div:first-child {
+      transform: translateZ(150px);
+    }
+
+    .box div:nth-child(2) {
+      transform: translateX(-228px) translateZ(0px) rotateY(-65deg);
+    }
+
+    .box div:nth-child(3) {
+      transform: translateX(263px) translateZ(0px) rotateY(52deg);
+    }
+
+    .box div:nth-child(4) {
+      transform: translateX(258px) translateZ(-322px) rotateY(-59deg);
+    }
+
+    .box div:nth-child(5) {
+      transform: translateX(-225px) translateZ(-282px) rotateY(62deg);
+    }
+
+    .box div:nth-child(6) {
+      transform: translateZ(-452px) translateX(16px);
+    }
+
+    .box div:last-child {
+      transform: translateZ(-178px);
+      background-image: url(../旋转木马/img/pig.jpg);
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+</html>

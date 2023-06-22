@@ -1,0 +1,99 @@
+.head {
+    width: 95%;
+    padding: 10px;
+    border-bottom: 2px solid #c81623;
+    padding: 20px 0;
+}
+
+.body {
+    margin: 20px auto;
+    width: 95%;
+    /* border: 1px solid #ccc; */
+    position: relative;
+}
+
+.body>.title {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.body>.title .left {
+    float: left;
+}
+
+.body>.title .right {
+    float: right;
+}
+
+.body>.cont {
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.body form {
+    margin: 55px auto;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 240px;
+    height: 36px;
+    padding: 10px;
+}
+
+.body .cont form>div {
+    margin: 20px auto;
+    width: 380px;
+}
+
+body .cont form>div .left {
+    float: left;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: right;
+}
+
+body .cont form>div .right {
+    float: right;
+}
+
+input[type="checkbox"] {
+    outline: none;
+    width: 16px;
+    height: 16px;
+}
+
+.body .cont form>input[type="checkbox"] a:hover {
+    color: #c81623;
+}
+
+.body .cont form button {
+    width: 200px;
+    line-height: 34px;
+    margin: 20px 0;
+    border: none;
+    background-color: #c81623;
+}
+
+.body .cont form button a {
+    color: #fff;
+}
+
+.bottom {
+    background-color: #fff;
+    height: 80px;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.bottom .third {
+    top: 0;
+}
