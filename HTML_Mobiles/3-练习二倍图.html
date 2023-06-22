@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*由于pc端与移动端之间的转换是2倍，因此我们需要在这里准备二倍图*/
+        
+        img {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+        }
+        
+        div {
+            width: 50px;
+            height: 50px;
+            background-image: url(./img/apple100.jpg);
+            border: 2px solid purple;
+            background-size: 50px 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/apple100.jpg" alt="">
+    <div></div>
+</body>
+
+</html>

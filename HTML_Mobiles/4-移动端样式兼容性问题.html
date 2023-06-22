@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      /* padding: 0; */
+    }
+
+    a {
+      /* 去除移动端高亮 */
+      -webkit-tap-highlight-color: transparent;
+      /* 去除长时间按压连接或图片显示菜单 */
+      -webkit-touch-callout: none;
+    }
+
+    input[type="button"] {
+      /* 去除ios默认自带的按钮样式 */
+      -webkit-appearance: none;
+    }
+
+    div>div {
+      width: 100px;
+      height: 100px;
+      border: 2px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    div>div:first-child {
+      border: 2px solid red;
+      background-color: pink;
+      line-height: 100px;
+      float: left;
+    }
+
+    div>div:last-child {
+      /* 设置怪异盒子模型 */
+      box-sizing: border-box;
+      border: 2px solid royalblue;
+      padding: 20px 0;
+      background-color: plum;
+      float: left;
+    }
+
+    body {
+      width: 100%;
+    }
+
+    div::after {
+      content: "";
+      height: 0;
+      display: block;
+      clear: both;
+      visibility: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 去除手机移动端高亮 -->
+  <a href="#">移动端测试</a>
+  <!-- 设置盒子使用怪异盒子模型不需要计算边框和内边距 -->
+  <!-- 传统盒子模型 -->
+  <div>
+    <div onclick="first()">传统盒子模型</div>
+    <div onclick="last()">CSS3盒子模型</div>
+
+  </div>
+  <input type="button" value="按钮">
+</body>
+<script>
+  function first() {
+    alert("传统盒子模型=宽度+内边距+边框")
+  }
+
+  function last() {
+    alert("css3盒子模型=宽高（内边距+边框）")
+  }
+</script>
+
+</html>
