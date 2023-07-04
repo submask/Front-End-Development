@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box {
+      width: 98%;
+      margin: 0 auto;
+      display: flex;
+      background-color: pink;
+      flex-wrap: wrap;
+      /* 设置为flex布局盒子当剩余空间容纳不下一个新的盒子，那么还是会硬生生的把盒子塞进去，那么就需要flex-wrap进行换行*/
+    }
+
+    .box>div {
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      background-color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+</html>

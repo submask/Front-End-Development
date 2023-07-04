@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 80%;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid saddlebrown;
+            flex-direction: column;
+            /* 设置主轴子元素排列左边对齐 */
+            /* justify-content: flex-start; */
+            /* 设置主轴子元素排列居中对齐 */
+            /* justify-content: center; */
+            /* 设置主轴子元素排列右边对齐 */
+            /* justify-content: flex-end; */
+            /* 设置父盒子的空间进行平均分配 */
+            justify-content: space-around;
+            /* 设置主轴第一个与最后一个贴边对齐，中间子元素对父盒子空间进行平均分配*/
+            /* justify-content: space-between; */
+            /* 设置主轴下的子元素将父盒子的空间每一个子盒子的空间都是相同的 */
+            /* justify-content: space-evenly; */
+        }
+        
+        .box>div {
+            width: 100px;
+            height: 100px;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>盒子1</div>
+        <div>盒子2</div>
+        <div>盒子3</div>
+    </div>
+</body>
+
+</html>

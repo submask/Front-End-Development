@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    font: 14px "-apple-system, Helvetica, sans-serif";
+    margin: 0 auto;
+}
+
+header,
+nav {
+    width: 100%;
+}
+
+header ul::after,
+nav::after,
+.nav::after,
+nav>div:nth-child(2)::after,
+.news::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+header ul li {
+    height: 50px;
+    float: left;
+    background-color: #333;
+}
+
+header ul li:nth-child(1),
+header ul li:nth-child(2) {
+    width: 10%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header ul li:nth-child(2) {
+    padding: 10px 0;
+}
+
+header ul li:nth-child(3) {
+    width: calc(100% - 20% - 30%);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+header ul li:nth-child(4) {
+    width: 30%;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+
+nav {
+    height: 40px;
+    background-color: #2C3570;
+    position: sticky;
+    top: 0;
+}
+
+nav>div {
+    float: left;
+}
+
+nav>div:first-child,
+nav>div:last-child {
+    width: 10%;
+    height: 40px;
+    /* background-color: red; */
+}
+
+nav>div:nth-child(2) {
+    width: calc(100% - 20%);
+    height: 40px;
+}
+
+nav>div:last-child {
+    float: right;
+}
+
+nav>div:first-child::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../img/s-btn.png);
+    margin: 10px 15px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    text-align: right;
+}
+
+nav>div:nth-child(2) {
+    padding: 5px 10px;
+}
+
+nav>div:last-child::after {
+    content: "登陆";
+    width: 100%;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    color: #fff;
+}
+
+.nav_input {
+    height: 30px;
+    padding: 0 5px;
+    padding-left: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.jd_img {
+    width: 10%;
+    height: 15px;
+    background-image: url(../img/jd.png);
+    background-repeat: no-repeat;
+    background-size: 20px 15px;
+    margin: 8px 0;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.jd_input {
+    float: left;
+    width: calc(100% - 10%);
+    height: 30px;
+    padding: 5px 0;
+}
+
+.search {
+    font-size: 18px;
+    color: #cecccc;
+    padding: 0 10px;
+    padding-right: 0px;
+}
+
+.jd_input>input[type="text"] {
+    width: 80%;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.banner {
+    width: 100%;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.brand {
+    width: 100%;
+}
+
+.brand img {
+    width: calc(100% / 3);
+    margin: -2px;
+}
+
+.nav a {
+    width: calc(100% / 5);
+    height: 81px;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav a span {
+    display: block;
+    margin: 5px 0;
+}
+
+.news {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.news a {
+    float: left;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+.news a:nth-child(2),
+.news a:nth-child(3) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+.news img {
+    width: 100%;
+}
