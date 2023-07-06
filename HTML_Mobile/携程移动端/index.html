@@ -5,10 +5,292 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>携程旅行-酒店预订,机票预订查询,旅游度假,商旅管理-携程无线官网</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="../../Helper/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    .sale_nav {
+      width: 100%;
+      margin: -5px 0;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .sale_nav>.title,
+    .sale_nav>.content {
+      width: 100%;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      display: flex;
+    }
+
+    .sale_nav>.content {
+      border: none;
+    }
+
+    .sale_nav>.title .left {
+      width: 74px;
+      height: 22px;
+      background: url(./img/hot.png) no-repeat;
+      background-position: 0 -16px;
+      background-size: 74px auto;
+      margin: 0 10px;
+    }
+
+    .sale_nav>.title .left,
+    .sale_nav>.title .right {
+      flex: 1;
+    }
+
+    .sale_nav>.title .right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .sale_nav>.title .right>a {
+      display: inline-block;
+      width: 60%;
+      line-height: 20px;
+      margin-right: 10px;
+      text-align: center;
+      background-color: #FF5888;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+    .sale_nav>.title .right>a span {
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .sale_nav .content {
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      padding: 0;
+    }
+
+    .sale_nav .content .raw {
+      width: 100%;
+      border: 1px solid #ccc;
+      display: flex;
+    }
+
+    .sale_nav .content .raw a:nth-child(n+2) {
+      border-left: 1px solid #ccc;
+    }
+
+    .sale_nav .content .raw img {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
-
+  <header>
+    <div>
+      <div class="input">
+        <div class="left">
+          <div class="bg_ico"></div>
+        </div>
+        <div class="right">
+          <input type="text" placeholder="搜索:目的地/酒店/景点/航班">
+        </div>
+      </div>
+    </div>
+    <div>
+      <i class="fa fa-user-circle"></i>
+      <span>我的</span>
+    </div>
+  </header>
+  <div class="banner"></div>
+  <nav>
+    <div>
+      <div class="img"></div>
+      <span>景点.玩乐</span>
+    </div>
+    <div>
+      <div class="img"></div>
+      <span>周边游</span>
+    </div>
+    <div>
+      <div class="img"></div>
+      <span>美食林</span>
+    </div>
+    <div>
+      <div class="img"></div>
+      <span>一日游</span>
+    </div>
+    <div>
+      <div class="img"></div>
+      <span>当地攻略</span>
+    </div>
+  </nav>
+  <section class="sect1">
+    <div>
+      <div class="top">酒店</div>
+      <div class="bottom"></div>
+    </div>
+    <div>
+      <div class="top">海外酒店</div>
+      <div class="bottom">特价酒店</div>
+    </div>
+    <div>
+      <div class="top">团购</div>
+      <div class="bottom">民宿.客栈</div>
+    </div>
+  </section>
+  <section class="sect2">
+    <div>
+      <div class="top">机票</div>
+      <div class="bottom"></div>
+    </div>
+    <div>
+      <div class="top">火车票</div>
+      <div class="bottom">特价机票</div>
+    </div>
+    <div>
+      <div class="top">汽车票.船票</div>
+      <div class="bottom">专车.租车</div>
+    </div>
+  </section>
+  <section class="sect3">
+    <div>
+      <div class="top">旅游</div>
+      <div class="bottom"></div>
+    </div>
+    <div>
+      <div class="top">门票</div>
+      <div class="bottom">目的地攻略</div>
+    </div>
+    <div>
+      <div class="top">邮轮旅行</div>
+      <div class="bottom">定制旅行</div>
+    </div>
+  </section>
+  <div class="side_nav">
+    <ul>
+      <li>
+        <a href="">
+          <div>
+            <div></div>
+          </div>
+          <div>wifi电话卡</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -28px;"></div>
+          </div>
+          <div>保险.签证</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -58px;"></div>
+          </div>
+          <div>外币兑换</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -90px;"></div>
+          </div>
+          <div>当地向导</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -120px;"></div>
+          </div>
+          <div>礼品卡</div>
+        </a>
+      </li>
+    </ul>
+    <ul style="margin: 10px 0;">
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 4px -148px;"></div>
+          </div>
+          <div>自由行</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -177px;"></div>
+          </div>
+          <div>境外玩乐</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0 -208px;"></div>
+          </div>
+          <div>信用卡</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 0px -234px;"></div>
+          </div>
+          <div>关爱卡</div>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <div>
+            <div style="background-position: 4px -260px;"></div>
+          </div>
+          <div>更多</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sale_nav">
+    <div class="title">
+      <div class="left"></div>
+      <div class="right">
+        <a>
+          <span>获取更多福利</span>
+          <i class="fa fa-angle-right fa-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="raw">
+        <a href="">
+          <img src="./upload/pic1.jpg" alt="">
+        </a>
+        <a href="">
+          <img src="./upload/pic2.jpg" alt="">
+        </a>
+      </div>
+      <div class="raw">
+        <a href="">
+          <img src="./upload/pic3.jpg" alt="">
+        </a>
+        <a href=""><img src="./upload/pic4.jpg" alt=""></a>
+      </div>
+      <div class="raw">
+        <a href="">
+          <img src="./upload/pic5.jpg" alt="">
+        </a>
+        <a href="">
+          <img src="./upload/pic6.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,328 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     max-width: 375px;
+     min-width: 320px;
+     margin: 0 auto;
+     font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+     color: #000;
+     overflow-x: hidden;
+     -webkit-tap-highlight-color: transparent;
+     background-color: #cccccc9f;
+ }
+ 
+ a {
+     color: #000;
+     text-decoration: none;
+ }
+ 
+ header {
+     width: 100%;
+     display: flex;
+     position: sticky;
+     top: 0;
+     border-radius: 10px;
+     background-color: #fff;
+     box-shadow: 0 5px 5px 5px #cccccc67;
+     z-index: 1;
+ }
+ 
+ header>div {
+     height: 50px;
+ }
+ 
+ header>div:first-child {
+     flex: 1;
+     padding: 10px;
+ }
+ 
+ header>div:first-child .input {
+     width: 100%;
+     height: 30px;
+     border: 1px solid #ccc;
+     display: flex;
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0px 4px 10px 3px #cccccc8f;
+ }
+ 
+ header>div:first-child .input .left {
+     width: 35px;
+     height: 29px;
+     text-align: right;
+     line-height: 25px;
+     font-size: 18px;
+     position: relative;
+ }
+ 
+ header>div:first-child .input .right {
+     flex: 1;
+ }
+ 
+ header>div:first-child .input .right input[type="text"] {
+     width: 95%;
+     height: 28px;
+     border: none;
+     outline: none;
+     color: #b5b7b5;
+ }
+ 
+ header>div:first-child .bg_ico {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     background-image: url(../img/sprite.png);
+     background-repeat: no-repeat;
+     background-position: -58px -278px;
+     background-size: 104px auto;
+     top: 6px;
+     right: 12px;
+ }
+ 
+ header>div:last-child {
+     width: 50px;
+     height: 50px;
+     padding-top: 5px;
+     display: flex;
+     flex-flow: column nowrap;
+     color: #0092cc;
+ }
+ 
+ header>div:last-child i {
+     font-size: 22px;
+     text-align: center;
+ }
+ 
+ header>div:last-child span {
+     font-size: 14px;
+     text-align: center;
+ }
+ 
+ .banner {
+     margin: 0 auto;
+     height: 75px;
+     background: url(../upload/focus.jpg) no-repeat;
+     margin-top: 5px;
+     background-size: 100% auto;
+ }
+ 
+ nav {
+     height: 75px;
+     background-color: #fff;
+     margin: 5px auto;
+     border-radius: 10px;
+     display: flex;
+ }
+ 
+ nav>div {
+     flex: 1;
+     display: flex;
+     flex-flow: column nowrap;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ nav>div .img {
+     width: 35px;
+     height: 35px;
+     background: url(../img/localnav_bg.png) no-repeat;
+     background-position: 0 0;
+     background-size: 35px auto;
+ }
+ 
+ section {
+     width: 100%;
+ }
+ 
+ section>.part {
+     margin: 5px auto;
+ }
+ 
+ nav>div:nth-child(2) .img {
+     background-position: 0 -35px;
+ }
+ 
+ nav>div:nth-child(3) .img {
+     background-position: 0 -70px;
+ }
+ 
+ nav>div:nth-child(4) .img {
+     background-position: 0 -105px;
+ }
+ 
+ nav>div:nth-child(5) .img {
+     background-position: 0 -140px;
+ }
+ 
+ section,
+ .side_nav {
+     width: 100%;
+     margin: 5px auto;
+ }
+ 
+ section {
+     display: flex;
+ }
+ 
+ .side_nav {
+     border-radius: 10px;
+     background-color: #fff;
+ }
+ 
+ section>div {
+     flex: 1;
+     height: 85px;
+ }
+ 
+ .sect1 {
+     background: -webkit-linear-gradient(left, #FF6952, #FF9D4C);
+     height: 85px;
+     border: 1px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     color: #fff;
+ }
+ 
+ .sect2 {
+     background: -webkit-linear-gradient(left, #4390EB, #49B3E7);
+     height: 85px;
+     color: #fff;
+ }
+ 
+ .sect3 {
+     background: -webkit-linear-gradient(left, #24B3A8, #61C259);
+     height: 85px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     color: #fff;
+ }
+ 
+ .sect1>div:nth-child(2),
+ .sect1>div:nth-child(3),
+ .sect2>div:nth-child(2),
+ .sect2>div:nth-child(3),
+ .sect3>div:nth-child(2),
+ .sect3>div:nth-child(3) {
+     border-left: 1px solid #fff;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .sect1>div:nth-child(2) .top,
+ .sect2>div:nth-child(2) .top,
+ .sect3>div:nth-child(2) .top,
+ .sect1>div:nth-child(3) .top,
+ .sect2>div:nth-child(3) .top,
+ .sect3>div:nth-child(3) .top {
+     width: 100%;
+     height: calc(85px / 2);
+     font-size: 16px;
+     text-align: center;
+     line-height: calc(85px / 2);
+     border-bottom: 1px solid #fff;
+ }
+ 
+ .sect1>div:nth-child(2) .bottom,
+ .sect2>div:nth-child(2) .bottom,
+ .sect3>div:nth-child(2) .bottom,
+ .sect1>div:nth-child(3) .bottom,
+ .sect2>div:nth-child(3) .bottom,
+ .sect3>div:nth-child(3) .bottom {
+     width: 100%;
+     height: calc(85px / 2);
+     font-size: 16px;
+     text-align: center;
+     line-height: calc(85px / 2);
+ }
+ 
+ .sect1>div:nth-child(1),
+ .sect2>div:nth-child(1),
+ .sect3>div:nth-child(1) {
+     position: relative;
+ }
+ 
+ .sect1>div:nth-child(1) .top,
+ .sect2>div:nth-child(1) .top,
+ .sect3>div:nth-child(1) .top {
+     position: absolute;
+     width: 100%;
+     height: calc(85px / 2);
+     top: 0;
+     text-align: center;
+     font-size: 16px;
+     line-height: calc(85px / 2);
+     color: #fff;
+ }
+ 
+ .sect1>div:nth-child(1) .bottom,
+ .sect2>div:nth-child(1) .bottom,
+ .sect3>div:nth-child(1) .bottom {
+     position: absolute;
+     width: 100%;
+     height: calc(85px / 2);
+     bottom: 0;
+     padding: 10px 0;
+ }
+ 
+ .sect1>div:nth-child(1) .bottom {
+     background: url(../img/hotel.png) no-repeat;
+     background-size: 100% auto;
+ }
+ 
+ .sect2>div:nth-child(1) .bottom {
+     background: url(../img/hotel.png) no-repeat;
+     background-size: 100% auto;
+ }
+ 
+ .sect3>div:nth-child(1) .bottom {
+     background: url(../img/hotel.png) no-repeat;
+     background-size: 100% auto;
+ }
+ 
+ .side_nav ul {
+     width: 100%;
+     height: 50%;
+     display: flex;
+     flex-flow: row wrap;
+     list-style: none;
+ }
+ 
+ .side_nav ul>li {
+     width: calc(100% / 5);
+     display: flex;
+     flex-flow: column nowrap;
+ }
+ 
+ .side_nav ul>li a {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .side_nav ul>li div:first-child {
+     width: 100%;
+     height: 60%;
+ }
+ 
+ .side_nav ul>li:nth-child(n+1) div:first-child {
+     padding: 10px 0;
+     margin: 0 auto;
+ }
+ 
+ .side_nav ul>li:nth-child(n+1) div div {
+     width: 25.5px;
+     height: 25.5px;
+     background: url(../img/subnav-bg.png) no-repeat;
+     background-position: 0 0;
+     background-size: 100% auto;
+ }
+ 
+ .side_nav ul>li div:last-child {
+     width: 100%;
+     height: 40%;
+     text-align: center;
+     font-size: 10px;
+ }
