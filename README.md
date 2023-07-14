@@ -1,7 +1,7 @@
 # Web_Front-end_Development
 (前端基础开发设计)
 # 介绍
-主要用于前端原生学习，涵盖了CSS、JS、HTML最基础原生的学习，在条件允许的情况下，可能将JQuery等前端开发框架引用进来    
+主要用于前端原生学习，涵盖了CSS、JS、HTML最基础原生的学习，在gitee空间允许的情况下，可能将JQuery等前端开发框架引用进来    
 # 项目整体目录  
 ## 第一部分:HTML与CSS设计
     
