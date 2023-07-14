@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rem基本使用</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 易错点：无论是em或rem他们都针对父元素字体的大小 */
+    /* em的缺点：em大小是参考父元素的大小，在网页设计中一般容易忘记设置父元素的大小从而导致排版错误，而
+    rem 的大小是根据网页的唯一标签html设置的，不存在不相同的情况*/
+
+    html {
+      font-size: 98px;
+    }
+
+    .parent>.children {
+      width: 2rem;
+      /*
+      196px
+      */
+      height: 2rem;
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="children"></div>
+    <div class="children"></div>
+    <div class="children"></div>
+  </div>
+</body>
+
+</html>
