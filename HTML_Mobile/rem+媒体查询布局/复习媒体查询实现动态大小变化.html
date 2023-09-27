@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* 适配尺寸：320  360 375 384 412 712 800 640 */
+
+    @media screen and (min-width:22.5rem) and (max-width:22rem) {
+      html {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (min-width:23.4375rem) {
+      html {
+        font-size: 11px;
+      }
+    }
+
+    @media screen and (min-width:24rem) {
+      html {
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (min-width:25.75rem) {
+      html {
+        font-size: 13px;
+      }
+    }
+
+    @media screen and (min-width:44.5rem) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width:50rem) {
+      html {
+        font-size: 15px;
+      }
+    }
+
+    @media screen and (min-width:50.1rem) {
+      html {
+        font-size: 16px;
+      }
+    }
+
+    .box {
+      width: 100%;
+      color: #fff;
+      font: normal 700 18px "微软雅黑";
+      background-color: red;
+    }
+
+    .box::after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .box .left {
+      float: left;
+    }
+
+    .box .left,
+    .box .right {
+      height: 4rem;
+      width: 4rem;
+      text-align: center;
+      line-height: 4rem;
+    }
+
+    .box .right {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="left">开始</div>
+    <div class="right">结束</div>
+  </div>
+</body>
+
+</html>

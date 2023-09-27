@@ -1,0 +1,24 @@
+.box>div {
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    float: left;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.box>div:first-child {
+    background-color: pink;
+}
+
+.box>div:last-child {
+    background-color: purple;
+}

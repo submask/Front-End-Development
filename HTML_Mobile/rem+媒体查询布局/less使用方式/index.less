@@ -1,0 +1,73 @@
+@color: pink;
+@box-w: 100%;
+@box-h: 120px;
+@font22: 22px;
+@textalign: center;
+@BaseFont: 16px;
+
+html {
+  font-size: @BaseFont;
+}
+
+.box {
+  width: @box-w;
+  height: @box-h;
+  background-color: @color;
+  font-size: @font22;
+  text-align: @textalign;
+}
+
+.box1 {
+  width: @box-w;
+  height: @box-h;
+
+  span {
+    display: block;
+    width: @box-w;
+    height: 200px;
+    line-height: 200px;
+    background-color: aqua;
+    text-align: center;
+
+    &:hover {
+      color: chocolate;
+    }
+  }
+}
+
+&.box1,
+span {
+  color: darkblue;
+}
+
+.box2 {
+  width: @box-w;
+  height: @box-h;
+
+  span {
+
+    &:first-child,
+    &:last-child {
+      color: red;
+      font-weight: 700;
+      text-align: center;
+      line-height: @box-h;
+
+      &:hover {
+        color: aquamarine;
+      }
+    }
+  }
+}
+
+.box3 {
+  width: (.5rem / @BaseFont);
+  height: @box-h;
+
+  div {
+    width: @box-h * 15.8px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #fff - #666;
+  }
+}

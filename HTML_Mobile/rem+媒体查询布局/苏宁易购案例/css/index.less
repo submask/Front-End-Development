@@ -1,0 +1,130 @@
+@import "common";
+@import url(./normalize.css);
+
+// 设置body的宽高
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+@BaseFontSize: 50px;
+
+// 设置顶部搜索框
+.search {
+  width: 15rem;
+  height: (88rem / @BaseFontSize);
+  background-color: #ffc001;
+  position: sticky;
+  top: 0;
+  font-size: (25rem / @BaseFontSize);
+  display: flex;
+
+
+
+  .left {
+    width: (44rem /@BaseFontSize);
+    height: (70rem / @BaseFontSize);
+    margin: (11rem/@BaseFontSize) (25rem/@BaseFontSize) (7rem/@BaseFontSize) (24rem/@BaseFontSize);
+    background: url(../image/classify.png) no-repeat;
+    background-size: (44rem /@BaseFontSize) (70rem / @BaseFontSize);
+  }
+
+  .mid {
+    flex: 1;
+
+
+    input[type="text"] {
+      width: 90%;
+      border: none;
+      outline: none;
+      height: (66rem / @BaseFontSize);
+      margin: (8.5rem / @BaseFontSize) 0;
+      padding-left: (50rem / @BaseFontSize);
+      border-radius: (30rem / @BaseFontSize);
+    }
+  }
+
+  .right {
+    width: (75rem / @BaseFontSize);
+    height: (70rem / @BaseFontSize);
+    margin: (10rem / @BaseFontSize);
+    text-align: center;
+    line-height: (70rem / @BaseFontSize);
+    color: #fff;
+  }
+}
+
+// 设置banner
+.banner {
+  width: (750rem / @BaseFontSize);
+  height: (328rem / @BaseFontSize);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// 设置广告部分
+.ad {
+  display: flex;
+
+  a {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// 设置导航栏部分
+nav {
+  width: (750rem / @BaseFontSize );
+  background-color: #fff;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+
+  a {
+    display: block;
+    width: ((750rem / @BaseFontSize ) / 5);
+    height: (140rem / @BaseFontSize );
+    text-decoration: none;
+
+    float: left;
+
+    .top {
+      width: 100%;
+      height: 60%;
+      text-align: center;
+      padding: (10rem / @BaseFontSize ) 0;
+
+      img {
+        width: (83rem / @BaseFontSize );
+        height: (79rem / @BaseFontSize );
+
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: 40%;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      font-size: (25rem / @BaseFontSize);
+    }
+  }
+}

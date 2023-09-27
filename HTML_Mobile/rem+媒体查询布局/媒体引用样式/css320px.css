@@ -1,0 +1,15 @@
+.box>div {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+}
+
+.box>div:first-child {
+    background-color: pink;
+}
+
+.box>div:last-child {
+    background-color: purple;
+}
